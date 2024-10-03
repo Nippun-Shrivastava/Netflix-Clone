@@ -4,7 +4,7 @@ function Login() {
   return (
     <div>
       <Header />
-      <div>this is login page</div>
+      <div className="text-[#e100ff]">this is login page</div>
     </div>
   );
 }

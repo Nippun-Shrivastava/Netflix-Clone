@@ -3,7 +3,7 @@ import React from "react";
 function Header() {
   return (
     <div>
-      <img src={NetflixLogo} alt="netflix-logo" className="w-[30px]" />
+      <img src={NetflixLogo} alt="netflix-logo" className="w-[300px]" />
     </div>
   );
 }
