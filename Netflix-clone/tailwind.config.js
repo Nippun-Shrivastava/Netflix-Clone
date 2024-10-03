@@ -2,7 +2,7 @@
 export default {
   content: [
     "./index.html",
-    "./src/main.jsx",
+    "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {},
