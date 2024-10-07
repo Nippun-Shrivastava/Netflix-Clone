@@ -11,7 +11,7 @@ function Login() {
       </div>
 
       <form className="absolute w-72 flex flex-col my-20 left-0 right-0 mx-auto bg-black rounded-lg bg-opacity-85">
-        <h1 className="text-left pt-8 pl-8 w-full font-poppins font-bold text-xl">
+        <h1 className="text-left pt-8 pl-10 w-full font-poppins font-bold text-xl">
           Log In
         </h1>
         <div className="flex flex-col w-full h-full items-center pt-5 pl-24 pr-24">
@@ -52,7 +52,7 @@ function Login() {
           <p className=" w-[290%] whitespace-pre-wrap pl-10 pr-10 text-[8px] mt-4 mb-4">
             <span>
               This page is protected by Google reCAPTCHA to ensure you're not a
-              bot
+              bot.
             </span>
           </p>
         </div>
