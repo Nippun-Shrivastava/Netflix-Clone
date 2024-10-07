@@ -6,6 +6,9 @@ export default {
   ],
   theme: {
     extend: {
+      colors: {
+        customTextColor:'#ffffff'
+      },
       fontFamily: {
         poppins: ['"poppins"', 'sans-serif'], // Add custom font here
       },
