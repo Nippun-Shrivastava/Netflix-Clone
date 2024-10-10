@@ -10,7 +10,7 @@ function Login() {
         <img src={Background} alt="login-page-background" />
       </div>
 
-      <form className="absolute w-72 flex flex-col my-20 left-0 right-0 mx-auto bg-black rounded-lg bg-opacity-85">
+      <form className="absolute w-72 flex flex-col my-20 left-0 right-0 mx-auto bg-gray-900 bg-opacity-75 rounded-lg  backdrop-blur-sm">
         <h1 className="text-left pt-8 pl-10 w-full font-poppins font-bold text-xl">
           Log In
         </h1>
