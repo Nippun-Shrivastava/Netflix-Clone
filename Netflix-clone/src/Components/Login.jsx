@@ -6,7 +6,7 @@ function Login() {
     <div>
       <Header />
 
-      <div className="absolute">
+      <div className="absolute grayscale-0">
         <img src={Background} alt="login-page-background" />
       </div>
 
