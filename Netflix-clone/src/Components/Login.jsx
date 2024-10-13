@@ -13,7 +13,7 @@ function Login() {
           className="w-[100%] h-[110%] object-cover"
         />
       </div>
-      <div className="absolute bg-black opacity-30 w-full h-full "></div>
+      <div className="absolute bg-black opacity-30 w-[100%] h-[110%] "></div>
 
       <form className="absolute w-[30%] h-[88%] flex flex-col my-[7%] left-[0%] right-[0%] mx-auto bg-black bg-opacity-75 rounded-lg">
         <div className="items-start text-left pt-[8%] pl-[14%] w-[100%] font-poppins font-bold">
