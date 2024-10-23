@@ -1,7 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import Header from "./Header";
 import Background from "../assets/background.jpg";
+
 function Login() {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const getInputData = (e) => {
+    e.preventDefault();
+    console.log(email, password);
+  };
   return (
     <div className="w-[100%]">
       <Header />
@@ -15,18 +22,25 @@ function Login() {
       </div>
       <div className="absolute bg-black opacity-30 w-[100%] h-[110%] "></div>
 
-      <form className="absolute w-[30%] h-[88%] flex flex-col my-[7%] left-[0%] right-[0%] mx-auto bg-black bg-opacity-75 rounded-lg">
+      <form
+        onSubmit={getInputData}
+        className="absolute w-[30%] h-[88%] flex flex-col my-[7%] left-[0%] right-[0%] mx-auto bg-black bg-opacity-75 rounded-lg"
+      >
         <div className="items-start text-left pt-[8%] pl-[14%] w-[100%] font-poppins font-bold">
           <h1 className="text-[250%]">Log In</h1>
         </div>
         <div className="flex flex-col w-[100%] h-[100%] pt-[5%] items-center pl-[14%] pr-[14%]">
           <input
             type="text"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
             className="p-[5%] mb-[5%] w-[100%] rounded border border-white font-poppins text-base bg-black bg-opacity-10 text-white placeholder-white focus:text-white color-white"
             placeholder="Email or mobile number"
           />
           <input
             type="password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
             className="p-[5%] mb-[5%] w-[100%] rounded border border-white font-poppins text-base bg-black bg-opacity-10 text-white placeholder-white  focus:text-white"
             placeholder="Password"
           />

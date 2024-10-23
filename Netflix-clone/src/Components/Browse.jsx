@@ -1,5 +1,6 @@
 import Header from "./Header";
 import Background from "../assets/background.jpg";
+import Line from "../assets/browse-page.png";
 import { ChevronRightIcon } from "@heroicons/react/24/outline";
 function Browse() {
   return (
@@ -13,7 +14,9 @@ function Browse() {
           className="w-[100%] h-[110%] object-cover"
         />
       </div>
+
       <div className="absolute bg-black opacity-70 w-[100%] h-[110%] "></div>
+
       <div className=" left-0 right-0 mx-auto items-center flex flex-col mt-[15%] w-[50%] absolute">
         <p className=" mb-[3%] font-poppins font-bold text-lg sm:text-xl md:text-2xl lg:text-4xl xl:text-5xl text-balanced">
           Unlimited movies, TV
@@ -37,6 +40,15 @@ function Browse() {
             Get Started
             <ChevronRightIcon className="h-6 w-6 ml-3" />
           </button>
+        </div>
+        <div className=" w-[200%] absolute z-10 mt-[58%]">
+          <img src={Line} id="browse-page-line" className="w-[100%]" />
+        </div>
+        <div className="absolute bg-black w-[200%] h-[210%] mt-[68%]" />
+        <div className="border border-white w-[180%] absolute z-10 h-[210%] mt-[68%]">
+          <h3 className="font-poppins font-semibold mt-[2%] ml-[4%] sm:text-sm md:text-base lg:text-lg xl:text-2xl">
+            Trending Now
+          </h3>
         </div>
       </div>
     </div>
